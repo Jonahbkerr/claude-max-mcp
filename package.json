@@ -1,0 +1,43 @@
+{
+  "name": "claude-max-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that lets any MCP-compatible AI agent delegate to Claude Code (Opus 4.7 by default) via your Claude Max subscription OAuth — not API billing.",
+  "type": "module",
+  "main": "src/server.js",
+  "bin": {
+    "claude-max-mcp": "src/server.js"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "smoke": "node src/server.js --smoke"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "claude-code",
+    "claude-max",
+    "opus",
+    "delegation",
+    "ai-agents",
+    "hermes-agent",
+    "cline",
+    "continue"
+  ],
+  "author": "Jonah Kerr <support@attune-dating.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jonahbkerr/claude-max-mcp.git"
+  },
+  "homepage": "https://github.com/Jonahbkerr/claude-max-mcp",
+  "bugs": {
+    "url": "https://github.com/Jonahbkerr/claude-max-mcp/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  }
+}

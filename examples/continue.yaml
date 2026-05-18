@@ -1,0 +1,10 @@
+# Continue (VS Code / JetBrains extension) MCP config.
+# Add to ~/.continue/config.yaml under the top-level 'mcpServers' key.
+mcpServers:
+  - name: claude-max
+    command: npx
+    args:
+      - -y
+      - claude-max-mcp
+    env:
+      CLAUDE_MAX_MCP_MODEL: claude-opus-4-7

@@ -1,0 +1,9 @@
+{
+  "_comment": "Add to ~/.claude/settings.json under the top-level 'mcpServers' key.",
+  "mcpServers": {
+    "claude-max": {
+      "command": "npx",
+      "args": ["-y", "claude-max-mcp"]
+    }
+  }
+}

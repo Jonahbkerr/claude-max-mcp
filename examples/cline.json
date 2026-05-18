@@ -1,0 +1,12 @@
+{
+  "_comment": "Cline (VS Code extension) MCP config. Add to your Cline MCP server settings.",
+  "mcpServers": {
+    "claude-max": {
+      "command": "npx",
+      "args": ["-y", "claude-max-mcp"],
+      "env": {
+        "CLAUDE_MAX_MCP_MODEL": "claude-opus-4-7"
+      }
+    }
+  }
+}
