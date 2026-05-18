@@ -1,6 +1,6 @@
-# Hermes Agent integration
+# Hermes Agent example
 
-This directory holds drop-in assets for wiring `claude-max-mcp` into a [Hermes Agent](https://github.com/NousResearch/hermes-agent) profile so a cheap-router-model (Gemini, Sonnet, etc.) delegates substantive work to Claude Opus 4.7 over your Max subscription.
+One concrete integration: wiring `claude-max-mcp` into a [Hermes Agent](https://github.com/NousResearch/hermes-agent) profile so a cheap router model (Gemini, Sonnet, etc.) delegates substantive work to Claude Opus 4.7 over your Max subscription. The pattern generalizes — these files are scoped to Hermes specifically because Hermes was the motivating use case.
 
 ## Quick install (one profile)
 
