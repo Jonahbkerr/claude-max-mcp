@@ -35,7 +35,7 @@ This is a small stdio MCP server that fixes that. It exposes a single tool — `
 Three real scenarios this solves:
 
 1. **Reduce duplicate billing.** Stop paying for Max *and* API credits when the agent work could just count against Max.
-2. **Cheap router → premium delegate.** A bot driven by a cheap model handles 95% of messages directly, then delegates the hard 5% to Opus 4.7 via this MCP server. Reference patterns in [`examples/hermes/`](examples/hermes/).
+2. **Prompt-enhancement router → Claude delegate.** A cheap router model (Gemini, Sonnet, Haiku) does no substantive reasoning — it just adds context (project name, today's date, scope hints) to the user's message and forwards it verbatim to Claude Opus 4.7. Claude does all the actual thinking, billed to your Max subscription. Reference template in [`examples/hermes/SOUL-additions.md`](examples/hermes/SOUL-additions.md).
 3. **Nest agents inside Claude Code.** Use this from within a Claude Code session so a sub-agent can make its own scoped Claude call without polluting the parent session's context.
 
 ## Install

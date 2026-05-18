@@ -89,7 +89,7 @@ if (process.argv.includes('--smoke')) {
 
 async function runMcpServer() {
   const server = new Server(
-    { name: 'claude-max-mcp', version: '0.1.0' },
+    { name: 'claude-max-mcp', version: '0.1.1' },
     { capabilities: { tools: {} } }
   );
 
